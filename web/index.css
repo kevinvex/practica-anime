@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-header);
+}
+
+:root{
+     /*nav,header*/
+     --background-header: black;
+     --color-header: white;
+     --heaigth-nav: 25px;
+     --background-header-buttom: white;
+     --background-color-buttom: black;
+     --background-radius-buttom: 250px;
+     --padding-buttom-nav: 8px 20px;
+     /*header:*/
+     --radius-img: 20px;
+}
+
+.header{
+    height: var(--heigth-header);
+    padding: .1px;
+}
+
+.figure_img{
+    width: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 2px solid white;
+    padding: 30px 0 20px;
+}
+
+.nav_item{
+    color: var(--color-header);
+    display: inline-block;
+    margin: 8px;
+}
+
+.nav_items{
+    list-style-type: none;
+}
+
+.nav_link{
+    background: var(--background-header-buttom);
+    color: var(--background-color-buttom);
+    border-radius: var(--background-radius-buttom);
+    text-decoration: none;
+    padding: var(--padding-buttom-nav);
+    text-align: center;
+}
+
+.section{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.anime_one_title_introduccion{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.section_animeone{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 30px;
+    transition: .3s;
+}
+
+.figure_animeone{
+    width: 40%;
+}
+
+.animeone_figure{
+    width: 100%;
+    border-radius: var(--radius-img);
+}
+
+.info_animeone{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.info_animeone_title{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.info_animeone_informatino{
+    font-size: 1rem;
+    padding-bottom: 30px;
+}
+
+.info_animeone_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.anime_one_links_link{
+    border-radius: var(--radius-img);
+    text-decoration: none;
+    padding: var(--padding-buttom-nav);
+    display: inline-block;
+}
+
+.links_crunchyroll{
+    background-color: #f47521;
+}
+
+.links_animeflv{
+    background-color: #01bcf2;
+}
+
+.header{
+    border-bottom: 2px solid white;
+}
+
+/*main*/ /*---------------------------------------------------------------------------------------------------*/
+
+
+.anime_lista_title_introduccion{
+    font-weight: 300;
+}
+
+.section_lista{
+    padding: 25px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width:85%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.lista_article{
+    width: 131px;
+    height: 294.500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.article_img{
+    width: 100%;
+    border-radius: 15px;
+    height: 196.500px;
+}
+
+.article_info_links_link{
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 5px;
+    width: 90%;
+    text-align: center;
+}
+
+
+
+@media (max-width: 800px){
+    .section_animeone{
+        flex-direction: column;
+        transition: .3s;
+        align-items: center;
+    }
+
+    .info_animeone{
+        width: 90% ;
+    }
+
+    .figure_animeone{
+        width: 75%;
+        margin: 10px 0;
+    }
+}
+
+
+
+@media (max-width: 350px){
+    .figure_animeone{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .info_animeone_informatino{
+        font-size: 12px;
+    }
+}
+

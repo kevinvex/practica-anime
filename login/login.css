@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    /*nav,header*/
+    --background-header: black;
+    --heigth-header: 100vh;
+    --color-header: white;
+    --heaigth-nav: 25px;
+    --background-header-buttom: white;
+    --background-color-buttom: black;
+    --background-radius-buttom: 250px;
+    --padding-buttom-nav: 8px 20px;
+    /*login*/
+    --background-login: white;
+    --padding-login: 30px ;
+    --radius-login: 25px;
+    --width-login-input: 90%;
+    --heigth-login-input: 38px;
+    --radius-login-input: 15px;
+    --width-buttom-submit-login: 40%;
+}
+
+.header{
+    background: var(--background-header);
+    height: var(--heigth-header);
+    padding: .1px;
+}
+
+.figure_img{
+    width: 20px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: var(--heaigth-nav) ;
+    flex-wrap: wrap;
+}
+
+.nav_item{
+    color: var(--color-header);
+    display: inline-block;
+    margin: 8px;
+}
+
+.nav_items{
+    list-style-type: none;
+}
+
+.nav_link{
+    background: var(--background-header-buttom);
+    color: var(--background-color-buttom);
+    border-radius: var(--background-radius-buttom);
+    text-decoration: none;
+    padding: var(--padding-buttom-nav);
+    text-align: center;
+}
+
+.section{
+    background: white;
+    width: 30%;
+    margin: 30px auto;
+    border-radius: var(--radius-login);
+    padding: var(--padding-login);
+    transition: .3s;
+}
+
+.section:focus-within{
+    transition: .3s;
+    padding: 45px 30px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.texts-title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.login-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 25px 0;
+    flex-wrap: wrap;
+}
+
+.login-input{
+    width: var(--width-login-input);
+    height: var(--heigth-login-input);
+    border-radius: var(--radius-login-input);
+    padding: 0 6px;
+}
+
+.input-submit{
+    width: var(--width-buttom-submit-login);
+}
+
+
+@media (max-width: 800px){
+    .section{
+        width: 60%;
+    }
+}
+
+@media (max-width: 400px){
+    .section{
+        width: 75%;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 290px){
+    .section{
+        width: 65%;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .input-submit{
+        width: 80%;
+    }
+}
