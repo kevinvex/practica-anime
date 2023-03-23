@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: .3s;
 }
 
 body{
@@ -50,6 +51,7 @@ body{
     color: var(--color-header);
     display: inline-block;
     margin: 8px;
+    cursor: pointer;
 }
 
 .nav_items{
@@ -63,6 +65,11 @@ body{
     text-decoration: none;
     padding: var(--padding-buttom-nav);
     text-align: center;
+}
+
+.nav_link:hover{
+    background: rgba(163, 52, 52, 0.644);
+    color: white;
 }
 
 .section{
